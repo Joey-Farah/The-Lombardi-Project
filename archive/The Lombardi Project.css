@@ -1,0 +1,752 @@
+body {
+	/* background: #515961; */
+	padding-top: 4rem;
+	max-width: 120%;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
+#navbaritem {
+	color: white;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+#navbarDropdown {
+	color: white;
+}
+
+.buffer {
+	margin-top: 30px;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 12%;
+	/*background-image: url('./assets/images/rsz_2tumblr_nvzl10sg5g1ufeyv7o1_1280.png');*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #190d53!important;
+}
+.navbar-brand {
+	font-family: Courier;
+}
+
+
+.dropdown-item {
+	font-family: Courier;
+	color: white;
+	background-color: none;
+}
+
+.dropdown-menu {
+	background: #190d53;
+	color: white;
+	border: white solid 2px;
+}
+
+.jumbotron {
+	margin-left: 20%;
+	margin-left: 20%;
+	margin-top: 2%;
+	background: darkgrey;
+	border: #190d53 solid 2px;
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	background-size: cover;
+	background-position: center;
+	align-self: center;
+	margin-top: 2rem;
+	justify-content: center;
+	padding: 1.5rem;
+}
+
+.BeforeTLP {
+	margin-left: 11rem;
+	font: black;
+}
+
+.whatisTLP {
+	font-weight: 1000;
+}
+.AfterTLP {
+	margin-right: 11rem;
+	font: black;
+}
+.palette {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.jumboheading {
+	margin-top: 0;
+}
+
+.jumboheading-heading {
+	align-self: center;
+
+}
+
+
+.tidbit {
+	text-align: center;
+	font-family: Courier;
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 2rem;
+}
+h5 {
+	text-indent: 2rem;
+}
+
+.threerules{
+	font-weight: bolder;
+	margin-top: 2rem;
+}
+h6 {
+	font-weight: bolder;
+}
+
+.matchups {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.display-3 {
+	text-align: center;
+	font-weight: bolder;
+	
+}
+.jumboheading-body {
+	text-indent: 1rem;
+	font-family: Courier;
+}
+.media-body {
+	align-self: end;
+}
+.palette {
+	width: 100%;
+}
+
+.banner {
+	width: 100%;
+	height: 100%;
+}
+
+.lead {
+	color: white;
+	text-align: center;
+	font-family: Courier;
+}
+
+.place {
+	color: white;
+	text-align: center;
+	font-family: Courier;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+li {
+	font-family: Courier;
+}
+.display-4	{
+	margin: 5%;
+	text-align: center;
+	padding-top: 10%;
+	color: #f7f7f7;
+	font-family: Courier;
+}
+
+hr	{
+	margin-left: 1rem;
+	margin-right: 1rem;
+    padding: 0;
+    border-top: medium double #190d53;
+    color: #190d53;
+    text-align: center;
+}
+.card-deck {
+	align-items: center;
+	padding-left: 10rem;
+	padding-right: 10rem;
+	max-width: 100%;
+}
+.card {
+	background-color: darkgrey;
+	min-width: 75%;
+	border: solid 2px #190d53;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin: 0 auto;
+
+}
+
+#lesson {
+	margin-bottom: 2rem;
+	border: 2px solid #190d53;
+}
+
+.clips {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.counterplay {
+	max-width: auto 0;
+	margin-top: 1rem;
+}
+
+.counterplayclips{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	align-items: right;
+	float: right;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+#counterplaytext {
+	overflow: auto;
+}
+
+.card-titles {
+	text-align: center;
+	margin-top: 0.5rem;
+	font-family: Lota;
+}
+
+.card-body {
+	text-indent: 1rem;
+	align-content: center;
+	max-width: 66%;
+}
+
+.card-text {
+	color: black;
+	font-family: Courier;
+}
+
+.video {
+	margin-top: 0;
+}
+
+span {
+	float: left;
+	vertical-align: top;
+	display: inline;
+	position: absolute;
+}
+
+
+h4	{
+	color: black;
+	font-family: Courier;
+	
+}
+
+.btn-primary {
+	text-indent: -0.1rem;
+}
+
+/* Video BG CSS */
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    max-width:100%;
+    height:auto;
+  }
+
+  .fullscreen-bg__video {
+    filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .fullscreen-bg__video {
+      width:auto;
+      height: 100%;
+    }
+  }body {
+	background: #515961;
+	padding-top: 4rem;
+}
+ #counterplayrow {
+ 	border: 2px solid #190d53;
+
+ }
+
+ .row {
+	 flex-wrap: nowrap;
+ }
+
+.buffer {
+	margin-top: 30px;
+}
+
+.navbar-brand {
+	font-family: Courier;
+}
+
+
+#savestate {
+	background-color: #190d53;
+	color: white;
+	font-size: 14px;
+	width: 14rem;
+	margin-left: 4rem;
+}
+
+#topjumbotron {
+	margin-top: 6rem;
+}
+
+#indexjumbotron {
+	margin-top: 6rem;
+}
+
+.jumbotron {
+	margin-left: 20%;
+	margin-left: 20%;
+	margin-top: 2%;
+	background: darkgrey;
+	border: #190d53 solid 2px;
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	background-size: cover;
+	background-position: center;
+	align-self: center;
+	margin-top: 1rem;
+}
+
+.palette {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.jumboheading {
+	margin-top: 0;
+}
+
+.jumboheading-heading {
+	align-self: center;
+
+}
+
+.tidbit {
+	text-align: center;
+	font-family: Courier;
+	font-weight: bold;
+}
+h5 {
+	text-indent: 2rem;
+}
+
+.threerules{
+	font-weight: bolder;
+}
+h6 {
+	font-weight: bolder;
+}
+
+.matchups {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.display-3 {
+	text-align: center;
+	font-weight: bolder;
+	
+}
+.jumboheading-body {
+	text-indent: 1rem;
+	font-family: Courier;
+}
+.media-body {
+	align-self: end;
+}
+.palette {
+	width: 100%;
+}
+
+.home {
+	background-image: url('./assets/images/Muscle Falco.png');
+	height: 37rem;
+	width: 105rem;
+}
+
+.banner {
+	width: 100%;
+	height: 100%;
+}
+
+.lead {
+	color: white;
+	text-align: center;
+	font-family: Courier;
+}
+
+
+li {
+	font-family: Courier;
+}
+.display-4	{
+	margin: 10px;
+	text-align: center;
+	padding-top: 10%;
+	color: #f7f7f7;
+	font-family: Courier;
+}
+
+
+.card-deck {
+	align-items: center;
+	padding-left: 10rem;
+	padding-right: 10rem;
+}
+.card {
+	background-color: darkgrey;
+	min-width: 75%;
+	border: solid 2px #190d53;
+	align-items: center;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin: 0 auto;
+}
+
+.clips {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	max-width: 100%;
+}
+
+.counterplay {
+	max-width: auto 0;
+}
+
+.counterplayclips{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top: 2rem;
+	align-items: right;
+	float: right;
+	margin-bottom: 2rem;
+	position: relative;
+	height: auto;
+	width: auto;
+	max-width: 120%;
+}
+
+.card-titles {
+	text-align: center;
+	margin-top: 0.5rem;
+	font-family: Lota;
+}
+
+.card-body {
+	text-indent: 1rem;
+	align-content: center;
+}
+
+.card-text {
+	color: black;
+	font-family: Courier;
+}
+
+.video {
+	margin-top: 0;
+}
+
+.counterplay {
+	margin-top: 1rem;
+}
+
+span {
+	float: left;
+	vertical-align: top;
+	display: inline;
+	position: absolute;
+	margin-top: 2rem;
+	margin-right: 2rem;
+}
+
+
+h4	{
+	color: black;
+	font-family: Courier;
+	
+}
+
+.btn-primary {
+	text-indent: -0.1rem;
+}
+
+/* Video BG CSS */
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    max-width:100%;
+    height:auto;
+  }
+
+  .fullscreen-bg__video {
+    filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 300%;
+      left: -100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .fullscreen-bg__video {
+      width:auto;
+      height: 100%;
+    }
+  }
+
+  .contributorpic {
+	max-width: 180px;
+	max-height: 180px;
+	border: solid 2px #190d53;
+  }
+
+  .contributor {
+	align-content: center;
+	display: inline-block;
+  }
+
+  .catalogitem {
+	  border: solid #190d53 2px;
+	  background: darkgrey;
+	  margin-block-start: 2rem;
+	  margin-right: 1rem;
+	  padding-top: 1rem;
+	  padding-bottom: 1rem;
+
+  }
+
+  .charactertitle {
+	  text-align: center;
+	  margin-bottom: 1rem;
+	  margin-top: -1rem;
+	  font-family: Courier;
+	  font-weight: 1000;
+	  font-size: 3rem;
+  }
+
+  .firstsectionbanner {
+	  width: 59%;
+	  margin: auto;
+  }
+  .sectionbanner {
+	width: 120%;
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+  .jumbotron-fluid {
+	max-width: 120%;
+}
+
+
+.scenariosearch {
+	margin-left: 25rem;
+	font-size: large;
+	color: white;
+}
+
+#navtitle {
+	font-size: 150%;
+}
+
+.searchbycategory {
+	width: 64%;
+}
+
+h2 {
+	font-family: Courier;
+	font-size: 100%;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* Dropdown CSS*/
+.dropbtn {
+	background-color: #190d53;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: white solid 2px;
+	cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #2e2558;
+  }
+  
+  #myInput {
+	box-sizing: border-box;
+	background-image: url('searchicon.png');
+	background-position: 14px 12px;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	padding: 14px 20px 12px 45px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background-color: #190d53;
+	font: white;
+  }
+  input {
+	background-color: #190d53;
+	color: white;
+	
+  }
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #190d53;
+	min-width: 230px;
+	overflow: auto;
+	border: 1px solid #ddd;
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #2e2558;}
+  
+  .show {display: block;}
+  /* Dropdown CSS*/
+
+  .searchsavestate {
+	  margin-right: 2rem;
+  }
+ /*Bulma CSS*/
+
+  :root {
+	--bg: #071e36;
+	--card-bg: #041221;
+  }
+  
+  body {
+	background: var(--bg);
+  }
+  
+  .box {
+  
+	background: var(--card-bg);
+  }
+  
+  
+  input::placeholder {
+	color: antiquewhite;
+  }
+  
+  .navbar {
+	background: var(--card-bg);
+  }
+  
+  .navbar-item {
+	color: ghostwhite;
+  }
+  
+  /* Card start*/
+  .card {
+	overflow: hidden;
+	background: ghostwhite;
+	color: var(--bg);
+  }
+  
+  .card.large {
+	border-radius: 5px;
+  }
+  
+  .title.no-padding {
+	margin-bottom: 0 !important;
+  }
+  
+  .footer {
+	background: var(--card-bg);
+	color: ghostwhite;
+  }
+  
+  .footer p,
+  strong {
+	color: ghostwhite
+  }
+  
+  .footer a:hover {
+	color: crimson;
+  }
+  
+  .fa {
+	color: ghostwhite;
+	margin: 10px
+  }
+  

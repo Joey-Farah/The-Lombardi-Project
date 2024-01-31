@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <title>The Lombardi Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="The Lombardi Project.css">
+   <!--  JQuery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+   crossorigin="anonymous"></script>
+   <!-- JavaScript -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+   <script src="./main.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script>var scale = 'scale(1)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+ document.body.style.msTransform =   scale;       // IE 9
+ document.body.style.transform = scale;     // General
+  </script>
+  <!-- Icons (dead game lol)-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+      <source src="./assets/images/video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="index.html" id="navtitle">The Lombardi Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="navbaritem">Contributors</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Matchups
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Fox.html">
+          Fox</a>
+          <a class="dropdown-item" href="Falco.html">
+          Falco</a>
+          <a class="dropdown-item" href="Marth.html">
+          Marth</a>
+          <a class="dropdown-item" href="Sheik.html">
+          Sheik</a>
+          <a class="dropdown-item" href="Peach.html">
+          Peach</a>
+          <a class="dropdown-item" href="Jigglypuff.html">
+          Jigglypuff</a>
+          <a class="dropdown-item" href="Captain Falcon.html">
+          Captain Falcon</a>
+          <a class="dropdown-item" href="Samus.html">
+          Samus</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+          <a class="dropdown-item" href="Ice Climbers.html">
+          Ice Climbers</a>
+          <a class="dropdown-item" href="Pikachu.html">
+          Pikachu</a>
+          <a class="dropdown-item" href="Yoshi.html">
+          Yoshi</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Savestates.html" id="navbaritem">How to Use Uncle Punch Savestates</a>
+      </li>
+      <li>
+        <div class="dropdown nav-item scenariosearch">
+            <button onclick="anySavestateButton()" class="dropbtn">Search for Any Scenario</button>
+            <div id="myDropdown AnySavestate" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput AnySavestate" onkeyup="filterFunctionAnySavestate()">
+              <a href="CatalogTest.html#TakeLaserFtilt">Sheik: Take Laser Ftilt</a>
+              <a href="Nair OOS">Sheik: Nair OOS</a>
+            </div>
+          </div>    
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="jumbotron" id="topjumbotron">
+      <div class="media">
+        <img src="https://www.ssbwiki.com/images/a/a5/Falco_Palette_%28SSBM%29.png" class="palette" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="jumbotron">
+      <div class="display-3">
+        <h2>Falco</h2>
+      </div>
+        <div class="jumboheading-body">
+          <h6 class="tidbit" >Aw yeah, 200 items thrown dittos!</h6>
+          <hr>
+          <h5 class="threerules">3 Rules for the Matchup<h5>
+            <h6 class="threerules">
+              <ol>
+                <li>Running Shine at low percent</li>
+                <li>Laser RPS, use plats to escape</li>
+                <li>Try to end combos with Falco offstage</li>
+              </ol>
+            </h6>
+            <p class="matchups">
+            <br><h6>The 3 rules in-depth:</h6>
+          1. Running shine at low percent can result in your biggest combo openings and avoids the risk associated with aerials and lasers at low percent. It's also very anti-meta. There's a scenario below that goes into more detail on this.
+          <br>2. Learn and understand the Laser RPS mini-game: High laser is typically the better first laser to shoot since most Falcos will be trying to shoot a lowish laser or approach with an aerial. High laser can lose to running shine or a dash below into an approach. Running shine or dashing forward from too far can get stuffed by low lasers or an aerial, depending on percent. If you lose the laser battle, avoid getting stuck in laser stun limbo and try to play a take-laser mixup (turn around uptilt or powershield) or try jumping to a platform and regain control of neutral from there.
+          <br>3. Get your easy 40% and prioritize getting them offstage. Overextending combos can result in missed edgeguard opportunities and potentially turn into a punish for your opponent. You don't always need to get combo video material! Remember, spacies always have a chance of dying when they're put offstage.</p>
+        </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="card-deck">
+
+    <!-- Scenario #1 -->
+    <div class="card mx-auto" id="lesson">
+      <div class="card-body">
+        <h4 class="card-title">Laser Trades</h4>
+        <p class="card-text">Too often, Falcos will try to fight lasers with more lasers and just end up in a stalemate position to see who stops shooting lasers first or picks a defensive options like fullhop, shield, roll, etc.</p>
+        <video class="clips" width="940" height="510" controls>
+          <source src="https://thumbs.gfycat.com/TanPettyAmurratsnake-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="counterplay">
+          <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Counterplay</a>
+
+<!-- Savestate Download Link -->
+             <a href="https://drive.google.com/file/d/1KVAQ0itnFHHaJXAwwv3H1nnxInKuSBlI/view?usp=sharing" target="_blank">
+             <button id="savestate">20XX Savestate</button></a>
+             
+<!-- Counterplay Button -->
+          <div class="collapse" id="collapse1">
+            <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>At about this range and low-mid percent, running shine is strictly better than every other option. If you act fast enough, running shine will outpace your opponent shooting another laser, will let you shine your opponent's aerials, and will CC a turnaround uptilt. Note: This doesn't mean running shine will win neutral in every stage position at every percent at every timing, but it tends to be the best option. Try using it like shown in these examples and you'll find when it's most useful.</p></span>
+                </div>  
+                <div class="col-1">
+                </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                    <source src="https://thumbs.gfycat.com/AngelicHappygoluckyCarp-mobile.mp4" type="video/mp4">
+                </video>
+                </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapse1">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>Here's running shine beating an immediate aerial after taking a laser. Note: Any higher percent or if the dair was timed lower, their shine will come out first. The lower percent and higher their aerial, the more often you'll get your shine out first. Also, there is more leniency when your opponent approaches with a Nair.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/BleakConfusedFish-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+            <div class="collapse" id="collapse1">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>Here's running shine beating turnaround uptilt. Note: As you go up in percent, you can get pushed too far for shine to reach. You can try doing a short dash into JC shine after CC to reach or if your opponent is intent on spamming uptilt until you approach, spam lasers while they just stand there.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/UnconsciousAppropriateBillygoat-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario #2 -->
+    <div class="card mx-auto" id="lesson">
+      <div class="card-body">
+        <h4 class="card-title">Losing the Laser War</h4>
+        <p class="card-text">This has happened to all of us. Once the opposing Falco has hit you with one laser, it feels like you're guaranteed to get hit by 3 more. Like other characters, Falco still has solid take laser options to reset neutral and avoid getting locked down once you've lost the laser battle. Note: Like everything in Melee, these counterplay options have a time and a place meaning they won't always work, but it's important to practice them and find where you can adjust them depending on the specific situation.</p>
+        <video class="clips" width="940" height="510" controls>
+          <source src="https://thumbs.gfycat.com/MealyLikableCarpenterant-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="counterplay">
+          <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse1">Counterplay</a>
+
+<!-- Savestate Download Link -->
+             <a href="https://drive.google.com/file/d/1aIOxCpQEcBgM67Kk9KHI1yUYwkA1zLQN/view?usp=sharing" target="_blank">
+             <button id="savestate">20XX Savestate</button></a>
+             
+<!-- Counterplay Button -->
+          <div class="collapse" id="collapse2">
+            <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>The first option we'll look at is when you get hit with a laser while trying to shoot your own. The timing feels a bit strange, but if you can train yourself to react out of the laser stun, you can double jump out and get to a side platform quickly.</p></span>
+                </div>  
+                <div class="col-1">
+                </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                    <source src="https://thumbs.gfycat.com/IlliterateWideeyedBasilisk-mobile.mp4">
+                </video>
+                </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapse2">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>This option is similar to the last clip except that you take a laser while trying to fall through the plat rather than during a SHL.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/AgonizingThoroughBordercollie-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+            <div class="collapse" id="collapse2">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>Again, we're going to the side plat once we recognize we're going to get hit by a laser before we can shoot our own. (Seeing a theme here? If not refer back to Rule #2 for the matchup.) Since this laser is being shot from a fall from the side plat rather than a SHL like our opponent, we can get our laser out faster and at a more specific timing. We happen to catch our opponent moving forward in this clip, but if you get hit by a laser during your falling laser, you can double jump out similar to the first two counterplay clips.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/ConcreteBrownLeafcutterant-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+            <div class="collapse" id="collapse2">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>The last option we'll look at is something to pull out every once and a while, but I'm not sure how consistently strong it is as Falco. I find it easier to time the powershield once I've dashed back. This sort of counterplay also reminds me of holding shield with your back to your opponent and bairing their approach. Like bairing OOS and take laser turnaround uptilt, this option loses to multiple lasers being spammed at different timings.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/KindheartedVacantFawn-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+
+
+</body>
+</html>

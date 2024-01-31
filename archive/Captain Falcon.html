@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Lombardi Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="The Lombardi Project.css">
+   <!--  JQuery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+   crossorigin="anonymous"></script>
+   <!-- JavaScript -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+   <script src="./main.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script>var scale = 'scale(1)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+ document.body.style.msTransform =   scale;       // IE 9
+ document.body.style.transform = scale;     // General
+  </script>
+  <!-- Icons (dead game lol)-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+      <source src="./assets/images/video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="index.html" id="navtitle">The Lombardi Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="navbaritem">Contributors</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Matchups
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Fox.html">
+          Fox</a>
+          <a class="dropdown-item" href="Falco.html">
+          Falco</a>
+          <a class="dropdown-item" href="Marth.html">
+          Marth</a>
+          <a class="dropdown-item" href="Sheik.html">
+          Sheik</a>
+          <a class="dropdown-item" href="Peach.html">
+          Peach</a>
+          <a class="dropdown-item" href="Jigglypuff.html">
+          Jigglypuff</a>
+          <a class="dropdown-item" href="Captain Falcon.html">
+          Captain Falcon</a>
+          <a class="dropdown-item" href="Samus.html">
+          Samus</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+          <a class="dropdown-item" href="Ice Climbers.html">
+          Ice Climbers</a>
+          <a class="dropdown-item" href="Pikachu.html">
+          Pikachu</a>
+          <a class="dropdown-item" href="Yoshi.html">
+          Yoshi</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Savestates.html" id="navbaritem">How to Use Uncle Punch Savestates</a>
+      </li>
+      <li>
+        <div class="dropdown nav-item scenariosearch">
+            <button onclick="anySavestateButton()" class="dropbtn">Search for Any Scenario</button>
+            <div id="myDropdown AnySavestate" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput AnySavestate" onkeyup="filterFunctionAnySavestate()">
+              <a href="CatalogTest.html#TakeLaserFtilt">Sheik: Take Laser Ftilt</a>
+              <a href="Nair OOS">Sheik: Nair OOS</a>
+            </div>
+          </div>    
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="jumbotron" id="topjumbotron">
+      <div class="media">
+        <img src="https://www.ssbwiki.com/images/8/80/Captain_Falcon_Palette_%28SSBM%29.png" class="palette" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="jumbotron">
+      <div class="display-3">
+        <h2>Captain Falcon</h2>
+      </div>
+        <div class="jumboheading-body">
+          <h6 class="tidbit" >Guess Man got ya down?</h6>
+          <hr>
+          <h5 class="threerules">3 Rules for the Matchup<h5>
+            <h6 class="threerules">
+              <ol>
+                <li>High Lasers to stuff Nairs</li>
+                <li>Remember Falcon's few OOS options</li>
+                <li>Prepare to SDI Nair at low percents</li>
+              </ol>
+            </h6>
+            <p class="matchups">
+            <br><h6>The 3 rules in-depth:</h6>
+          1. Falcons are going to spam short hop Nair and Falco's high laser stuffs that. Be wary of how close you are when you start your lasers and if Falcon is starting to pick up on your high lasers. Falcon will look to side-b underneath your high lasers or dash dance grab.
+          <br>2. Don't respect Falcon's shield. This doesn't me be careless on his shield, but understand that Falcon's OOS options are relatively weak. Be wary of stomp OOS by not Shining his shield too much and be ready to start reading rolls. Look for late aerial>shine grab>fthrow, late aerial waveshine back or late nair dash back to read roll in and maintain stage positioning.
+          <br>3. Falcon's love to follow up their Nairs with grab, so be ready to SDI nair at low percent. It's reactable when you get hit as you laser sometimes when getting caught in other actions. Essentially, Falcon's aerials at low percent into a grab aren't always real, you have counterplay. See the scenario below.</p>
+        </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="card-deck">
+
+    <!-- Scenario #1 -->
+    <div class="card mx-auto" id="lesson">
+      <div class="card-body">
+        <h4 class="card-title">Getting caught by Nair</h4>
+        <p class="card-text">Falcon's Nair will often catch you mid-laser and combo into a grab, but you can react mid-Nair to prevent Falcon from getting a follow-up.</p>
+        <video class="clips" width="940" height="510" controls>
+          <source src="https://thumbs.gfycat.com/CalmFewConey-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="counterplay">
+          <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Counterplay</a>
+
+<!-- Savestate Download Link -->
+             <a href="https://drive.google.com/file/d/1vslQPQgjimgZiq16m-Tkf8nFgMNic-5N/view?usp=sharing" target="_blank">
+             <button id="savestate">20XX Savestate</button></a>
+             
+<!-- Counterplay Button -->
+          <div class="collapse" id="collapse1">
+            <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>On reaction to your SHL getting Naired, you can SDI and ASDI away for the second hit of Nair. This lets you dodge an immediate grab and whiff punish.</p></span>
+                </div>  
+                <div class="col-1">
+                </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                    <source src="https://thumbs.gfycat.com/ClumsyBoringArmyworm-mobile.mp4" type="video/mp4">
+                </video>
+                </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapse1">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>Here's another example of SDI and ASDI away, but instead of dashing back to whiff punish, you can also turnaround uptilt.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/LightheartedFancyHammerheadbird-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</body>
+</html>

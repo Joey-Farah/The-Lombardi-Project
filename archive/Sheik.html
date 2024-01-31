@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Lombardi Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="The Lombardi Project.css">
+   <!--  JQuery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+   crossorigin="anonymous"></script>
+   <!-- JavaScript -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+   <script src="./main.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script>var scale = 'scale(1)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+ document.body.style.msTransform =   scale;       // IE 9
+ document.body.style.transform = scale;     // General
+  </script>
+  <!-- Icons (dead game lol)-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+      <source src="./assets/images/video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="#" id="navtitle">The Lombardi Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="navbaritem">Contributors</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Matchups
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">
+          Fox</a>
+          <a class="dropdown-item" href="#">
+          Falco</a>
+          <a class="dropdown-item" href="#">
+          Marth</a>
+          <a class="dropdown-item" href="Sheik.html">
+          Sheik</a>
+          <a class="dropdown-item" href="#">
+          Peach</a>
+          <a class="dropdown-item" href="#">
+          Jigglypuff</a>
+          <a class="dropdown-item" href="#">
+          Captain Falcon</a>
+          <a class="dropdown-item" href="#">
+          Samus</a>
+          <a class="dropdown-item" href="#">
+          Luigi</a>
+          <a class="dropdown-item" href="#">
+          Ice Climbers</a>
+          <a class="dropdown-item" href="#">
+          Pikachu</a>
+          <a class="dropdown-item" href="#">
+          Yoshi</a>
+          <a class="dropdown-item" href="#">
+          Luigi</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="navbaritem">How to Use Uncle Punch Savestates</a>
+      </li>
+      <li>
+        <div class="dropdown nav-item scenariosearch">
+            <button onclick="anySavestateButton()" class="dropbtn">Search for Any Scenario</button>
+            <div id="myDropdown AnySavestate" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput AnySavestate" onkeyup="filterFunctionAnySavestate()">
+              <a href="Sheik.html#TakeLaserFtilt">Sheik: Take Laser Ftilt</a>
+              <a href="Nair OOS">Sheik: Nair OOS</a>
+            </div>
+          </div>    
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+<!-- Title Card -->
+  <div class="row">
+    <div class="jumbotron float-center" id="topjumbotron">
+        <h2 class="charactertitle">Sheik</h2>
+      <div class="media">
+        <img src="https://www.ssbwiki.com/images/2/23/Sheik_Palette_%28SSBM%29.png" class="palette" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="jumbotron searchbycategory">
+      <div class="display-3">
+      </div>
+        <div class="jumboheading-body">
+      <hr>
+          <h6 class="tidbit">Search for a Savestate by Category</h6>
+<!-- Search Savestate By -->
+    <!-- Dropdown Neutral -->
+<div class="row searchsavestate justify-content-center">
+    <div class="dropdown col-md-2">
+        <button onclick="neutralButton()" class="dropbtn">Neutral</button>
+        <div id="myDropdown Neutral" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput Neutral" onkeyup="filterFunctionNeutral()">
+          <a href="Sheik.html#TakeLaserFtilt">Take Laser Ftilt</a>
+          <a href="Nair OOS">Nair OOS</a>
+        </div>
+      </div>
+    <!-- Dropdown Punish -->
+    <div class="dropdown col-md-2">
+        <button onclick="punishButton()" class="dropbtn">Punish</button>
+        <div id="myDropdown Punish" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput Punish" onkeyup="filterFunctionPunish()">
+          <a href="Sheik.html#TakeLaserFtilt">Take Laser Ftilt</a>
+          <a href="Nair OOS">Nair OOS</a>
+        </div>
+    </div>
+    <!-- Dropdown Defense -->
+    <div class="dropdown col-md-2">
+        <button onclick="defenseButton()" class="dropbtn">Defense</button>
+        <div id="myDropdown Defense" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput Defense" onkeyup="filterFunctionDefense()">
+          <a href="Sheik.html#TakeLaserFtilt">Take Laser Ftilt</a>
+          <a href="Nair OOS">Nair OOS</a>
+        </div>
+      </div>
+    <!-- Dropdown All Sheik Savestates -->
+    <div class="dropdown col-md-2">
+        <button onclick="characterButton()" class="dropbtn">All Sheik Savestates</button>
+        <div id="myDropdown Character" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput Character" onkeyup="filterFunctionCharacter()">
+          <a href="Sheik.html#TakeLaserFtilt">Take Laser Ftilt</a>
+          <a href="Nair OOS">Nair OOS</a>
+        </div>
+    </div>
+  </div>
+<hr>
+    </div>
+    </div>
+  </div>
+
+  <hr>
+<!-- Neutral Banner -->
+<div class="row"><a id="TakeLaserFtilt"></a>
+<div class="jumbotron firstsectionbanner">
+    <div class="display-3">
+    </div>
+      <div class="jumboheading-body">
+        <hr>
+        <br>
+        <h6 class="tidbit">Neutral</h6>
+        <hr>
+      </div>
+  </div>
+</div>
+  <section id="explore" class="explore">
+    <div class="container">
+        <div class="section-header">
+        </div><!--/.section-header-->
+        <div class="explore-content">
+<!-- Row  -->            
+            <div class="row">
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Row  -->            
+            <div class="row">
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Row  -->
+            <div class="row">
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Punish Banner -->
+<div class="row">
+    <div class="jumbotron sectionbanner">
+        <div class="display-3">
+        </div>
+          <div class="jumboheading-body">
+            <hr>
+            <br>
+            <h6 class="tidbit">Punish</h6>
+            <hr>
+          </div>
+      </div>
+    </div>
+<!-- Row  -->            
+            <div class="row">
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Row  -->            
+            <div class="row">
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+<!-- Row  -->
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalogitem col-md-4 col-sm-6">
+                    <div class="single-explore-item">
+                        <div>
+                            <h2>Take Laser Ftilt</h2>
+                            <video class="clips" width="940" height="510" controls>
+                                <source src="https://thumbs.gfycat.com/ComfortableDeliciousEquestrian-mobile.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div class="single-explore-txt bg-theme-1">
+                            <div class="explore-open-close-part">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <!-- Savestate Download Link -->
+                                    <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+                                        <button id="savestate">Training Mode Savestate</button></a>
+                                    </div>
+                                    <div class="col-sm-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.container-->
+
+</section><!--/.explore-->
+<!--explore end -->
+    
+  <hr>
+
+
+
+
+</body>
+</html>

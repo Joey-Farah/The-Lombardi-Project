@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <title>The Lombardi Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="The Lombardi Project.css">
+   <!--  JQuery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+   crossorigin="anonymous"></script>
+   <!-- JavaScript -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+   <script src="./main.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script>var scale = 'scale(1)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+ document.body.style.msTransform =   scale;       // IE 9
+ document.body.style.transform = scale;     // General
+  </script>
+  <!-- Icons (dead game lol)-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+      <source src="./assets/images/video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="index.html" id="navtitle">The Lombardi Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="navbaritem">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="navbaritem">Patreon</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Matchups
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Fox.html">
+          Fox</a>
+          <a class="dropdown-item" href="Falco.html">
+          Falco</a>
+          <a class="dropdown-item" href="Marth.html">
+          Marth</a>
+          <a class="dropdown-item" href="Sheik.html">
+          Sheik</a>
+          <a class="dropdown-item" href="Peach.html">
+          Peach</a>
+          <a class="dropdown-item" href="Jigglypuff.html">
+          Jigglypuff</a>
+          <a class="dropdown-item" href="Captain Falcon.html">
+          Captain Falcon</a>
+          <a class="dropdown-item" href="Samus.html">
+          Samus</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+          <a class="dropdown-item" href="Ice Climbers.html">
+          Ice Climbers</a>
+          <a class="dropdown-item" href="Pikachu.html">
+          Pikachu</a>
+          <a class="dropdown-item" href="Yoshi.html">
+          Yoshi</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Savestates.html" id="navbaritem">How to Use Uncle Punch Savestates</a>
+      </li>
+      <li>
+        <div class="dropdown nav-item scenariosearch">
+            <button onclick="anySavestateButton()" class="dropbtn">Search for Any Scenario</button>
+            <div id="myDropdown AnySavestate" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput AnySavestate" onkeyup="filterFunctionAnySavestate()">
+              <a href="CatalogTest.html#TakeLaserFtilt">Sheik: Take Laser Ftilt</a>
+              <a href="Nair OOS">Sheik: Nair OOS</a>
+            </div>
+          </div>    
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="row">
+    <div class="jumbotron" id="indexjumbotron">
+      <div class="display-3">
+        <h2>What is the Lombardi Project?</h2>
+      </div>
+        <div class="jumboheading-body">
+          <h6 class="tidbit"></h6>
+          <hr>
+          <h5 class="threerules"></h5>
+          <p class="matchups whatisTLP">Arguably, the 2 most important aspect of improving at Melee are execution and pattern recognition. Players who are prepared for a scenario and understand the better options and counterplay to those options are going to come out on top more often than the players who are experiencing that situation for the first time. Practicing exectution for basic tech is fairly straightforward these days when you have tools like UnclePunch's Training Lab. However, it becomes more difficult when the execution that needs training is a series of actions in a scenario that can be altered quickly by an opponent. 
+          </p>
+          <p class="matchups whatisTLP">With the latest update to Uncle Punch's <a href="https://www.patreon.com/UnclePunch" target="_blank">Training Mode</a>, training yourself to recognize those scenarios and execute properly is easier now than ever before.</p>
+          <p class="matchups whatisTLP">The Lombardi Project was built to house Training Mode savestate files, organize them by matchup and category, and offer search functionality. Instead of having to create a savestate yourself everytime you want to practice a scenario, you can search for it here!</p>
+          <p class="matchups whatisTLP">The Lombardi Project is a work in progress and is constantly being updated. New scenarios are always being suggested and created. Feel free to join our <a href="" target="_blank">Discord Server</a> and message a site contributor with any suggestions!</p>
+        </div>
+    </div>
+  </div>
+
+<div class="jumbotron home" id="topjumbotron">
+  <h1 class="display-4"></h1>
+  <p class="lead"></p>
+  <p class="place"></p>
+  </p>
+</div>
+
+<hr>
+
+</body>
+</html>

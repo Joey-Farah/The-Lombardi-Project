@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <title>The Lombardi Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+  <link rel="stylesheet" type="text/css" href="The Lombardi Project.css">
+   <!--  JQuery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+   crossorigin="anonymous"></script>
+   <!-- JavaScript -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+   <script src="./main.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script>var scale = 'scale(1)';
+document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+ document.body.style.msTransform =   scale;       // IE 9
+ document.body.style.transform = scale;     // General
+  </script>
+  <!-- Icons (dead game lol)-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+      <source src="./assets/images/video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="index.html" id="navtitle">The Lombardi Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="navbaritem">Contributors</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Matchups
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Fox.html">
+          Fox</a>
+          <a class="dropdown-item" href="Falco.html">
+          Falco</a>
+          <a class="dropdown-item" href="Marth.html">
+          Marth</a>
+          <a class="dropdown-item" href="Sheik.html">
+          Sheik</a>
+          <a class="dropdown-item" href="Peach.html">
+          Peach</a>
+          <a class="dropdown-item" href="Jigglypuff.html">
+          Jigglypuff</a>
+          <a class="dropdown-item" href="Captain Falcon.html">
+          Captain Falcon</a>
+          <a class="dropdown-item" href="Samus.html">
+          Samus</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+          <a class="dropdown-item" href="Ice Climbers.html">
+          Ice Climbers</a>
+          <a class="dropdown-item" href="Pikachu.html">
+          Pikachu</a>
+          <a class="dropdown-item" href="Yoshi.html">
+          Yoshi</a>
+          <a class="dropdown-item" href="Luigi.html">
+          Luigi</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Savestates.html" id="navbaritem">How to Use Uncle Punch Savestates</a>
+      </li>
+      <li>
+        <div class="dropdown nav-item scenariosearch">
+            <button onclick="anySavestateButton()" class="dropbtn">Search for Any Scenario</button>
+            <div id="myDropdown AnySavestate" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput AnySavestate" onkeyup="filterFunctionAnySavestate()">
+              <a href="CatalogTest.html#TakeLaserFtilt">Sheik: Take Laser Ftilt</a>
+              <a href="Nair OOS">Sheik: Nair OOS</a>
+            </div>
+          </div>    
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="jumbotron" id="topjumbotron">
+      <div class="media">
+        <img src="https://www.ssbwiki.com/images/e/ed/Marth_Palette_%28SSBM%29.png" class="palette" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="jumbotron">
+      <div class="display-3">
+        <h2>Marth</h2>
+      </div>
+        <div class="jumboheading-body">
+          <h6 class="tidbit">Sword man go brrrr</h6>
+          <hr>
+          <h5 class="threerules">3 Rules for the Matchup<h5>
+            <h6 class="threerules">
+              <ol>
+                <li>Low laser for dash dance/powershields, High lasers when airborn</li>
+                <li>Patient approaches with lasers</li>
+                <li>End combos with Marth in the corners/offstage</li>
+              </ol>
+            </h6>
+            <p class="matchups">
+            <br><h6>The 3 rules in-depth:</h6>1. Low lasers are best for Marths trying to dash dance. Mid-high lasers are best for the Marths going airborne. Marth has a tough time moving forward out of laser stun. Force him to use take laser mixups or jump.
+          <br>2. Approaches need to be extra patient - running shine, late aerial, or short hop at them double jump play a mixup. Slowly pushing Marth towards the corner with lasers and putting on corner pressure is also very effective.
+          <br>3. Punishing Marth needs to prioritize ending the combo with your opponent towards the corners and offstage.You don't want to overextend and get reversaled. Once you have Marth in the corner, his options are really limited. So you can essentially extend your punishes using corner pressure instead of trying to straight up zero to death.</p>
+        </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="card-deck">
+
+    <!-- Scenario #1 -->
+    <div class="card mx-auto" id="lesson">
+      <div class="card-body">
+        <h4 class="card-title">Dthrow Dtilt</h4>
+        <p class="card-text">To avoid getting gimped by down throw dtilt, you have a lot of options. You can try mixups like double jump and airdodge through the Marth, you can double jump back and play a recovery mixup (side-b/up-b), or you can try a rising aerial, but these all have their own risks that can cost you the stock. Shine stalling and playing a mixup from there also has its own risks, but the counterplay can be more consistent in getting you to ledge and preserving your stock.</p>
+        <video class="clips" width="940" height="510" controls>
+          <source src="https://thumbs.gfycat.com/DisgustingFeistyEmperorpenguin-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="counterplay">
+          <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">Counterplay</a>
+
+<!-- Savestate Download Link -->
+             <a href="https://drive.google.com/file/d/18YNKIvu5XMYfBDuWeb83aqXGzu43piHK/view?usp=sharing" target="_blank">
+             <button id="savestate">20XX Savestate</button></a>
+             
+<!-- Counterplay Button -->
+          <div class="collapse" id="collapse1">
+            <div class="counterplay row" id="counterplayrow">
+                <div class="col-sm-5 col-md-5 col-lg-5" id="counterplaytext"><span><p>Once you've been down thrown by Marth at the ledge, you first need to not panic and immediately double jump into the incoming down tilt. Start your shine stall and take note of how far the Marth is from the ledge. If Marth is far from the ledge, try to space your double jump away from the ledge so you can avoid the down tilt hitbox. We'll call this "horizontal" sweetspotting since you're trying to grab ledge from the side rather than from underneath. Note: your DI and percent can impact this situation significantly. These counterplay options are typically better at low percent.</p></span>
+                </div>  
+                <div class="col-sm-1 col-md-1 col-lg-1">
+                </div>                
+                <div class="col-sm-6 col-md-6 col-lg-6"><video class="counterplayclips" width="578" height="306" controls>
+                    <source src="https://thumbs.gfycat.com/NeatBoilingCat-mobile.mp4" type="video/mp4">
+                </video>
+                </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapse1">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>If the Marth is very close to the ledge after his down throw, you'll want to shine stall and space your double jump so that you ride the stage and sweetspot really close. Since Marth is so close to the ledge, his dtilt hitbox extends out too far to hit your double jump, if spaced correctly. We'll call this "vertical" sweetspotting since you're trying to grab ledge from below and near to stage/</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/FaithfulUniqueEyra-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scenario #2 -->
+    <div class="card mx-auto" id="lesson">
+      <div class="card-body">
+        <h4 class="card-title">Take Laser Swing</h4>
+        <p class="card-text">Immediately approaching after shooting a laser can run yourself into a Marth's disjointed hitboxes. Depending on the range, Marth's jab, uptilt, and fsmash can comeout fast enough out of laser stun to hit you before you hit him. Note: If you're close enough when the laser hits, your approaching aerials can hit Marth before he gets a hitbox out, but that is distance dependent. The use of the available counterplay options can also change based on which move Marth chooses out of laser stun.</p>
+        <video class="clips" width="940" height="510" controls>
+          <source src="https://thumbs.gfycat.com/SecondaryIncredibleKusimanse-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="counterplay">
+          <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse1">Counterplay</a>
+
+<!-- Savestate Download Link -->
+             <a href="https://drive.google.com/file/d/13cv6FNlHgMyO04tpQiuApQ9DG6yHjebj/view?usp=sharing" target="_blank">
+             <button id="savestate">20XX Savestate</button></a>
+             
+<!-- Counterplay Button -->
+          <div class="collapse" id="collapse2">
+            <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext" id="counterplaytext"><span><p>This mini dash dance has been popularized by Mango. Marth's moves have huge hitboxes, but they have significant ending lag. Do a tiny dash back before approaching after your laser and you can whiff punish the move Marth throws out. Note: This is a bit of a timing read and can lose to take laser dashback if mistimed, you'll adjust based on how long the Marth has been taking to react out of laser stun and which move they choose.</p></span>
+                </div>  
+                <div class="col-1">
+                </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                    <source src="https://thumbs.gfycat.com/UnrealisticRegalEider-mobile.mp4">
+                </video>
+                </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapse2">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>Run up shield after your laser can be safer than doing the Mango dash back, but won't always net you a bigger punish. Often times you will only get a shield grab, but sometimes you get close enough to shine OOS or can wavedash OOS and shine before Marth's move end lag is over.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/AnxiousDentalGrison-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+            <div class="collapse" id="collapse2">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>If Marth is going to stand there and just swing in place forever, literally just keep lasering. You can also slowly inch forward with lasers to take space. Note: Don't just mindlessly shoot lasers, eventually the Marth will do something else so take note of how he decides to change up his take laser option. If you're lasering too close, fsmash and forward tilt can punish.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/FlakyNewFlicker-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scenario #3 -->
+    <div class="card mx-auto" id="lesson">
+      <div class="card-body">
+        <h4 class="card-title">Take Laser Dashback</h4>
+        <p class="card-text">It's usually a bad idea to just immediately go in after a laser with a full drift forward aerial. Most marths will typically choose either take laser swing or dashback as their go to option, but be sure to pay attention to how they alternate which they choose and if they start jumping to avoid lasers, going to plats, or powershielding.</p>
+        <video class="clips" width="940" height="510" controls>
+          <source src="https://thumbs.gfycat.com/OfficialPoliteIbex-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="counterplay">
+          <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Counterplay</a>
+
+<!-- Savestate Download Link -->
+             <a href="https://drive.google.com/file/d/1k3acAUq19ylj8el9WIg916s5BgRAIHrF/view?usp=sharing" target="_blank">
+             <button id="savestate">20XX Savestate</button></a>
+             
+<!-- Counterplay Button -->
+          <div class="collapse" id="collapse3">
+            <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>If Marth is willing to dash back forever, eventually he runs out stage. It's important to make him pay for giving you free stage positioning. Approach with the lasers, but not too quickly to avoid a switch into a take laser swing option. Once he's in the corner, Marth's options are severly limited.</p></span>
+                </div>  
+                <div class="col-1">
+                </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                    <source src="https://thumbs.gfycat.com/ShoddyFirmIchidna-mobile.mp4">
+                </video>
+                </div>
+            </div>
+          </div>
+            <div class="collapse" id="collapse3">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>Instead of picking a laggy aerial to approach with, you can try to land a point blank approaching laser to connect into a shine, dtilt, grab, etc. This option can be risky if Marth decides to choose a take laser swing option. If you're unsure about how Marth will respond to approaching lasers, be more patient like the first counterplay option and be more willing to committ with an approaching laser when you have a read on more take laser dashback.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/SingleBestKangaroo-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+            <div class="collapse" id="collapse3">
+              <div class="counterplay row" id="counterplayrow">
+                <div class="col-5" id="counterplaytext"><span><p>Overshooting your aerial to where Marth will dashback can be strong, but keep in mind Marth dash distance can still outrange your aerial drift. You'll typically only hit Marth with this if he's already committing to the pivot grab or you've comitted to dashing extra far before doing your aerial. You can also use running shine instead of an aerial (less range, but can be less committal). This sort of counterplay also risks getting beat by a take laser swing option.</p></span>
+                </div>  
+                  <div class="col-1">
+                  </div>                
+                <div class="col-6"><video class="counterplayclips" width="578" height="306" controls>
+                      <source src="https://thumbs.gfycat.com/HastyNecessaryAzurevase-mobile.mp4" type="video/mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+
+
+</body>
+</html>
